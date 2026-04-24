@@ -9,6 +9,7 @@ app.use('/api/chatbot', chatbotRoutes);
 
 const port = process.env.PORT || 5000;
 
+
 const startServer = async () => {
   await connectDB();
   app.listen(port, () => {
