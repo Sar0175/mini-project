@@ -1,7 +1,7 @@
 {
   "name": "pharmacy-locator-server",
   "version": "1.0.0",
-  "license" : "MIT",
+  "license": "MIT",
   "type": "module",
   "main": "src/server.js",
   "scripts": {
@@ -20,6 +20,6 @@
     "nodemailer": "^8.0.5"
   },
   "engines": {
-  "node": ">=18"
-}
+    "node": ">=18"
+  }
 }
