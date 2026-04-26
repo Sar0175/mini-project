@@ -103,6 +103,8 @@ export async function signin(req, res) {
 export async function verifyEmail(req, res) {
   // This endpoint will no longer be reached since we skip sending tokens.
   return res.status(404).send('<h2>Verification is disabled</h2>');
+  const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
+return res.redirect(`${frontendUrl}/#/verified`);
 }
 
 // ✅ PROFILE
