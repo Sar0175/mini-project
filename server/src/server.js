@@ -4,6 +4,11 @@ dotenv.config();
 import app from './app.js';
 import connectDB from './config/db.js';
 import chatbotRoutes from './routes/chatbot.js';
+import cors from 'cors';
+
+app.use(cors({
+  origin: '*'
+}));
 
 app.use('/api/chatbot', chatbotRoutes);
 
